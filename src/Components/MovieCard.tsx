@@ -6,11 +6,11 @@ function MovieCard(props: any) {
   }
   return (
     <div className="container">
-      {props.data.map((ele: any) => {
+      {props.data.map((item: any) => {
         return (
-          <div key={ele.imdbID} className="card-container">
-            <img src={ele.Poster} width="150px" height="150px" alt="" />
-            <p>Title : {ele.Title}</p>
+          <div key={item.imdbID} className="card-container">
+            <img src={item.Poster} width="150px" height="150px" alt="" />
+            <p>Title : {item.Title}</p>
           </div>
         );
       })}
